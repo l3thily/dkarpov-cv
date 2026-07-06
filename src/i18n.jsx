@@ -11,11 +11,12 @@ const dict = {
       rolePrefix: '',
       statement:
         'Студент 4-го курса МЭО МГИМО со специализацией в рисках и страховании — и разработчик, который доводит идеи до продакшна: AI-боты, автоматизация процессов, full-stack приложения.',
-      stats: [
-        { value: 8, suffix: '', label: 'проектов в проде' },
-        { value: 25, suffix: 'K', label: 'подписчиков сообщества' },
-        { value: 1, suffix: 'M', label: 'охват в месяц на пике' },
-        { value: 0, text: 'C1', label: 'английский язык' },
+      briefTitle: '// коротко',
+      brief: [
+        { label: 'стек', value: 'Python · FastAPI · React · Flutter · PostgreSQL' },
+        { label: 'ai', value: 'GPT · Claude · Whisper · DeepSeek · LangChain' },
+        { label: 'учёба', value: 'МГИМО · МЭО, 4 курс · риски и страхование' },
+        { label: 'языки', value: 'русский · english C1 · العربية A1' },
       ],
       scroll: 'листай вниз',
     },
@@ -160,11 +161,12 @@ const dict = {
       rolePrefix: '',
       statement:
         'Final-year International Economics student at MGIMO specialising in risk & insurance — and a developer who ships to production: AI bots, process automation, full-stack apps.',
-      stats: [
-        { value: 8, suffix: '', label: 'projects in production' },
-        { value: 25, suffix: 'K', label: 'community followers' },
-        { value: 1, suffix: 'M', label: 'monthly reach at peak' },
-        { value: 0, text: 'C1', label: 'English proficiency' },
+      briefTitle: '// tl;dr',
+      brief: [
+        { label: 'stack', value: 'Python · FastAPI · React · Flutter · PostgreSQL' },
+        { label: 'ai', value: 'GPT · Claude · Whisper · DeepSeek · LangChain' },
+        { label: 'study', value: 'MGIMO · Int’l Economics, 4th year · risk & insurance' },
+        { label: 'langs', value: 'Russian · English C1 · Arabic A1' },
       ],
       scroll: 'scroll down',
     },

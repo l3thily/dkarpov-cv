@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react'
-import { AnimatePresence, motion, useInView, animate } from 'framer-motion'
+import { useEffect, useState } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
 import { useLang } from '../i18n.jsx'
 
 function RotatingRole({ roles }) {
@@ -26,29 +26,6 @@ function RotatingRole({ roles }) {
       </AnimatePresence>
       <span className="caret" />
     </div>
-  )
-}
-
-function Counter({ value, suffix, text }) {
-  const ref = useRef(null)
-  const inView = useInView(ref, { once: true, margin: '-40px' })
-  const [display, setDisplay] = useState(0)
-
-  useEffect(() => {
-    if (!inView || text) return
-    const controls = animate(0, value, {
-      duration: 1.6,
-      ease: [0.22, 1, 0.36, 1],
-      onUpdate: (v) => setDisplay(Math.round(v)),
-    })
-    return () => controls.stop()
-  }, [inView, value, text])
-
-  return (
-    <span ref={ref} className="stat-value">
-      {text || display}
-      {suffix ? <span className="suffix">{suffix}</span> : null}
-    </span>
   )
 }
 
@@ -99,16 +76,23 @@ export function Hero() {
       </motion.p>
 
       <motion.div
-        className="hero-stats"
+        className="hero-brief"
         initial={{ opacity: 0, y: 32 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.85 }}
       >
-        {t.hero.stats.map((s) => (
-          <div className="stat" key={s.label}>
-            <Counter value={s.value} suffix={s.suffix} text={s.text} />
-            <div className="stat-label">{s.label}</div>
-          </div>
+        <div className="hero-brief-title">{t.hero.briefTitle}</div>
+        {t.hero.brief.map((row, i) => (
+          <motion.div
+            className="brief-row"
+            key={row.label}
+            initial={{ opacity: 0, x: -14 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 1.05 + i * 0.12 }}
+          >
+            <span className="brief-label">{row.label}</span>
+            <span className="brief-value">{row.value}</span>
+          </motion.div>
         ))}
       </motion.div>
 
