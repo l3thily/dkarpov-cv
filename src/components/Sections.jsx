@@ -41,9 +41,13 @@ export function About() {
     <section id="about">
       <div className="container">
         <SectionHead index={t.about.index} title={t.about.title} />
-        <Reveal>
-          <p className="about-lead">{t.about.lead}</p>
-        </Reveal>
+        <div className="about-lead">
+          {t.about.lead.map((para, i) => (
+            <Reveal key={i} delay={i * 0.08}>
+              <p>{para}</p>
+            </Reveal>
+          ))}
+        </div>
         <div className="skill-groups">
           {t.about.groups.map((g, i) => (
             <Reveal key={g.name} delay={i * 0.08} className="skill-group">

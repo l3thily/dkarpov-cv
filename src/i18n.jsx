@@ -24,8 +24,11 @@ const dict = {
     about: {
       index: '01',
       title: 'Обо мне',
-      lead:
-        'Я живу на стыке двух миров: международная экономика и написание кода. Днём — риски, страхование и ВЭД, вечером — продакшн-системы, которые заменяют ручной труд. Мне не нужно ТЗ на сорок страниц: я разбираюсь в бизнес-задаче, предлагаю решение и довожу его до работающего сервиса.',
+      lead: [
+        'Я студент 4-го курса МЭО МГИМО, специализация — управление рисками и страхование. Параллельно с учёбой делаю коммерческие проекты как разработчик: телеграм-боты, AI-автоматизация, десктопные и веб-приложения. Всё, что перечислено ниже, я написал сам — от идеи до деплоя на сервер — и это реально используется: юридической фирмой, строительной компанией, командой переводчиков.',
+        'До этого я работал с клиентами в Альфа-Банке, проходил практику менеджером ВЭД, развивал юмористический паблик ВКонтакте до 25 тысяч подписчиков и возил товары из Китая под заказ. Этот опыт помогает в разработке: я понимаю, как устроены процессы заказчика и где они буксуют, поэтому делаю инструменты, которые вписываются в реальную работу, а не усложняют её.',
+        'Ищу стажировку или позицию, где пригодится и экономическое образование, и умение писать код: финансы, аналитика, автоматизация.',
+      ],
       groups: [
         { name: 'Разработка', items: ['Python (asyncio, aiogram, Telethon)', 'FastAPI · PostgreSQL · SQLite', 'React · Vite', 'Flutter · Dart', 'Docker · Linux · systemd'] },
         { name: 'AI и интеграции', items: ['OpenAI GPT · Whisper', 'Claude API', 'DeepSeek API', 'LangChain', 'Groq'] },
@@ -174,8 +177,11 @@ const dict = {
     about: {
       index: '01',
       title: 'About',
-      lead:
-        'I live at the intersection of two worlds: international economics and writing code. Risk, insurance and foreign trade by day — production systems that replace manual work by night. I don’t need a forty-page spec: I dig into the business problem, propose a solution and take it all the way to a running service.',
+      lead: [
+        'I’m a final-year International Economics student at MGIMO, specialising in risk management and insurance. Alongside my studies I build commercial software: Telegram bots, AI automation, desktop and web apps. Everything listed below I wrote myself — from the idea to deployment on a server — and it is used in practice: by a law firm, a construction company, a team of translators.',
+        'Before that I worked with retail clients at Alfa-Bank, interned as a foreign trade manager, grew a humor community on VK to 25 thousand followers and ran an import business sourcing goods from China. That experience helps me as a developer: I understand how a client’s processes work and where they get stuck, so I build tools that fit into real workflows instead of complicating them.',
+        'I’m looking for an internship or a role where both sides are useful — the economics degree and the ability to write code: finance, analytics, automation.',
+      ],
       groups: [
         { name: 'Engineering', items: ['Python (asyncio, aiogram, Telethon)', 'FastAPI · PostgreSQL · SQLite', 'React · Vite', 'Flutter · Dart', 'Docker · Linux · systemd'] },
         { name: 'AI & integrations', items: ['OpenAI GPT · Whisper', 'Claude API', 'DeepSeek API', 'LangChain', 'Groq'] },

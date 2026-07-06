@@ -446,10 +446,22 @@ section {
 
 /* ---------- about ---------- */
 .about-lead {
-  font-size: clamp(19px, 2.6vw, 26px);
-  line-height: 1.5;
-  max-width: 860px;
-  font-weight: 500;
+  max-width: 780px;
+}
+
+.about-lead p {
+  font-size: clamp(16.5px, 1.8vw, 20px);
+  line-height: 1.65;
+  font-weight: 450;
+  color: var(--text);
+}
+
+.about-lead > div + div p {
+  margin-top: 22px;
+}
+
+.about-lead > div:last-child p {
+  color: var(--accent);
 }
 
 .skill-groups {
