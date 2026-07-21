@@ -58,6 +58,12 @@ const dict = {
           period: '4-й курс',
           desc: 'Международные экономические отношения со специализацией в управлении рисками и страховании. Дипломная работа на стыке финансов и анализа данных.',
         },
+        {
+          org: 'МФТИ',
+          role: 'Профессиональная переподготовка · «Основы технологий ИИ»',
+          period: '2026',
+          desc: 'Курс профессиональной переподготовки по основам технологий искусственного интеллекта.',
+        },
       ],
     },
     projects: {
@@ -210,6 +216,12 @@ const dict = {
           role: 'International Economic Relations · Risk & Insurance',
           period: '4th year',
           desc: 'International economics with a specialisation in risk management and insurance. Thesis at the intersection of finance and data analysis.',
+        },
+        {
+          org: 'MIPT',
+          role: 'Professional retraining · "Fundamentals of AI Technologies"',
+          period: '2026',
+          desc: 'Professional retraining programme on the fundamentals of artificial intelligence technologies.',
         },
       ],
     },
