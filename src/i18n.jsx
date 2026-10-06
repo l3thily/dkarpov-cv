@@ -149,14 +149,16 @@ const dict = {
           ]
         },
         {
-          name: "Протоколы Zoom-встреч",
-          desc: "Бот сам заходит в Zoom-встречу через headless Chromium (Xvfb), пишет аудио через виртуальный sink PulseAudio, присылает транскрипт и summary, архивирует на Яндекс Диск. Очередь обработки записей на Celery.",
+          name: "Транскрипты и протоколы совещаний",
+          desc: "Telegram-userbot принимает запись совещания и прогоняет её через очередь на Celery: ffmpeg режет аудио на чанки, Whisper распознаёт их, LLM собирает итоги и протокол. Пользователь получает транскрипт с таймкодами и протокол в docx, копия уходит в архивный канал, статус обработки обновляется в чате.",
           tags: [
-            "Playwright",
-            "ffmpeg",
+            "Python",
+            "Celery",
+            "Redis",
+            "PostgreSQL",
             "Whisper",
             "Claude API",
-            "Celery"
+            "Docker"
           ]
         },
         {
@@ -473,14 +475,16 @@ const dict = {
           ]
         },
         {
-          name: "Zoom meeting minutes",
-          desc: "The bot joins a Zoom call by itself via headless Chromium (Xvfb), records audio through a virtual PulseAudio sink, sends a transcript and summary, archives to cloud storage. Recording processing runs on a Celery queue.",
+          name: "Meeting transcripts & minutes",
+          desc: "A Telegram userbot takes a meeting recording and runs it through a Celery queue: ffmpeg splits the audio into chunks, Whisper transcribes them, an LLM writes the summary and minutes. The user gets a timestamped transcript and minutes in docx, a copy goes to an archive channel, and processing status updates live in the chat.",
           tags: [
-            "Playwright",
-            "ffmpeg",
+            "Python",
+            "Celery",
+            "Redis",
+            "PostgreSQL",
             "Whisper",
             "Claude API",
-            "Celery"
+            "Docker"
           ]
         },
         {
