@@ -186,7 +186,7 @@ const dict = {
         },
         {
           name: "AI-редакция футбольного канала",
-          desc: "Автоматизированная редакция Telegram-канала: парсер 9 источников, дедупликация и AI-фильтр шума, живой поиск фактов, генерация постов и картинок в голосе бренда, двойное одобрение админами и автопубликация по расписанию.",
+          desc: "Автоматизированная редакция Telegram-канала: парсер 13 Telegram-каналов-источников, дедупликация и AI-фильтр шума, живой поиск фактов, генерация постов и картинок в голосе бренда, двойное одобрение админами и автопубликация по расписанию.",
           tags: [
             "Python",
             "Claude API",
@@ -205,8 +205,8 @@ const dict = {
           ]
         },
         {
-          name: "Прогнозы на ЧМ-2026",
-          desc: "Telegram Mini App с прогнозами на ЧМ-2026: очки взвешены по редкости исхода на основе market-implied вероятностей Polymarket. Полный стек и жизненный цикл матча.",
+          name: "Футбольные прогнозы в Telegram",
+          desc: "Telegram Mini App с прогнозами на ЧМ-2026, Лигу чемпионов, Лигу наций и топ-матчи европейских лиг: очки взвешены по редкости исхода на основе market-implied вероятностей Polymarket и ELO, сезонные рейтинги, голосования за Золотой мяч и другие награды. 450+ пользователей.",
           tags: [
             "FastAPI",
             "PostgreSQL",
@@ -242,16 +242,6 @@ const dict = {
             "Gmail API",
             "Claude API",
             "Telegram"
-          ]
-        },
-        {
-          name: "Офлайн-мессенджер для кампуса",
-          desc: "P2P-мессенджер без интернета: устройства находят друг друга в локальной сети (mDNS) и через Wi-Fi Direct / Bluetooth, сообщения идут напрямую.",
-          tags: [
-            "Flutter",
-            "Dart",
-            "mDNS",
-            "Wi-Fi Direct"
           ]
         },
         {
@@ -512,7 +502,7 @@ const dict = {
         },
         {
           name: "AI newsroom for a football channel",
-          desc: "An automated newsroom for a Telegram channel: a parser over 9 sources, dedup and AI noise filtering, live fact search, post and image generation in the brand voice, two-admin approval and scheduled auto-publishing.",
+          desc: "An automated newsroom for a Telegram channel: a parser over 13 source Telegram channels, dedup and AI noise filtering, live fact search, post and image generation in the brand voice, two-admin approval and scheduled auto-publishing.",
           tags: [
             "Python",
             "Claude API",
@@ -531,8 +521,8 @@ const dict = {
           ]
         },
         {
-          name: "World Cup 2026 predictions",
-          desc: "Telegram Mini App for World Cup 2026 predictions: points weighted by outcome rarity from Polymarket market-implied probabilities. Full stack and full match lifecycle.",
+          name: "Football predictions in Telegram",
+          desc: "Telegram Mini App for predictions on the 2026 World Cup, Champions League, Nations League and top European league matches: points weighted by outcome rarity from Polymarket market-implied probabilities and ELO, seasonal leaderboards, votes for the Ballon d’Or and other awards. 450+ users.",
           tags: [
             "FastAPI",
             "PostgreSQL",
@@ -568,16 +558,6 @@ const dict = {
             "Gmail API",
             "Claude API",
             "Telegram"
-          ]
-        },
-        {
-          name: "Offline campus messenger",
-          desc: "A peer-to-peer messenger with no internet: devices discover each other over the local network (mDNS) and via Wi-Fi Direct / Bluetooth, messages go directly.",
-          tags: [
-            "Flutter",
-            "Dart",
-            "mDNS",
-            "Wi-Fi Direct"
           ]
         },
         {
