@@ -130,7 +130,7 @@ export function Projects() {
             <Reveal key={p.name} delay={(i % 3) * 0.08}>
               <SpotCard>
                 <div className="card-num">
-                  <span>{String(i + 3).padStart(2, '0')}</span>
+                  <span>{String(i + t.projects.featured.length + 1).padStart(2, '0')}</span>
                 </div>
                 <h3>{p.name}</h3>
                 <p className="card-desc">{p.desc}</p>
