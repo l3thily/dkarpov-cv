@@ -20,7 +20,7 @@ const dict = {
       ],
       scroll: 'листай вниз',
     },
-    marquee: ['Python', 'FastAPI', 'React', 'Flutter', 'PostgreSQL', 'asyncio', 'OpenAI API', 'Claude API', 'DeepSeek', 'Whisper', 'LangChain', 'Playwright', 'Docker', 'Linux VPS', 'systemd', 'Telegram API', 'SQLite', 'ffmpeg', 'TypeScript', 'Next.js', 'Three.js', 'Celery'],
+    marquee: ['Python', 'FastAPI', 'React', 'Flutter', 'PostgreSQL', 'asyncio', 'OpenAI API', 'Claude API', 'DeepSeek', 'Whisper', 'LangChain', 'Playwright', 'Docker', 'Linux VPS', 'systemd', 'Telegram API', 'SQLite', 'ffmpeg', 'TypeScript', 'Next.js', 'Three.js', 'Celery', 'Swift', 'SwiftUI', 'MLX'],
     about: {
       index: '01',
       title: 'Обо мне',
@@ -30,8 +30,8 @@ const dict = {
         'Ищу стажировку или позицию, где пригодится и экономическое образование, и умение писать код: финансы, аналитика, автоматизация.',
       ],
       groups: [
-        { name: 'Разработка', items: ['Python (asyncio, aiogram, Telethon)', 'FastAPI · PostgreSQL · SQLite', 'TypeScript · React · Next.js', 'Flutter · Dart', 'Docker · Linux · systemd'] },
-        { name: 'AI и интеграции', items: ['OpenAI GPT · Whisper', 'Claude API', 'DeepSeek API', 'LangChain', 'Groq'] },
+        { name: 'Разработка', items: ['Python (asyncio, aiogram, Telethon)', 'FastAPI · PostgreSQL · SQLite', 'TypeScript · React · Next.js', 'Flutter · Dart', 'Swift · SwiftUI', 'Docker · Linux · systemd'] },
+        { name: 'AI и интеграции', items: ['OpenAI GPT · Whisper', 'Claude API', 'DeepSeek API', 'LangChain', 'Локальные LLM (MLX)'] },
         { name: 'Домен', items: ['Риски и страхование', 'ВЭД и логистика Китай—РФ', 'Банковские продукты', 'Контент и рост сообществ'] },
         { name: 'Языки', items: ['Русский — родной', 'English — C1', 'العربية — A1'] },
       ],
@@ -75,7 +75,7 @@ const dict = {
         {
           name: "CRM и документооборот для издательства",
           tagline: "Сделки, документы и отчётность в одном кабинете с AI-помощником",
-          desc: "Единая рабочая система издательской компании: сделки по стадиям, клиенты и контакты, выпуски и прайс, счета, акты, договоры и КП с автонумерацией. ИИ-помощник отвечает по базе в вебе и Telegram, пишет документы по промпту, разбирает PDF-карточки и фото договоров, расшифровывает голосовые (локальный Whisper). Отдельный бот собирает отчёты об оказанных услугах на фирменном бланке и сам проверяет пакет на ошибки.",
+          desc: "Единая рабочая система издательской компании: сделки по стадиям, клиенты и контакты, выпуски и прайс, счета, акты, договоры и КП с автонумерацией. ИИ-помощник отвечает по базе в вебе и Telegram, пишет документы по промпту, разбирает PDF-карточки и фото договоров, расшифровывает голосовые (локальный Whisper) и отвечает голосом. «Входящие»: бросаешь любой файл — ИИ сам предлагает клиента, сделку, задачу или заметку. База знаний пополняется из Obsidian сотрудников, личное ИИ отсекает. Отдельный бот собирает отчёты об оказанных услугах на фирменном бланке и сам проверяет пакет на ошибки.",
           impact: "Ежедневный инструмент команды: продажи, документы и отчёты для заказчиков ведутся в одном месте, рутину берёт на себя ИИ.",
           tags: [
             "Python",
@@ -225,13 +225,32 @@ const dict = {
           ]
         },
         {
-          name: "Симулятор футбольной карьеры",
-          desc: "Браузерная игра: карьера игрока от академии до финалов, 490+ клубов, трансферы и награды. Мультиплеер-комнаты с детерминированной синхронизацией мира между игроками.",
+          name: "Серия спортивных симуляторов «Легенда»",
+          desc: "Браузерные игры о карьере спортсмена на legendapolya.com: футбол (56 лиг с реальными регламентами), хоккей и баскетбол (НБА с драфтом, Евролига, NCAA) на общем ядре — сейвы, события и характер, матчи в эфире, тренерская карьера, рекорды GOAT. Мультиплеер-комнаты с детерминированной синхронизацией мира, автотесты баланса и UI-бот.",
           tags: [
             "JavaScript",
             "Python",
             "PWA",
-            "GitHub Pages"
+            "Playwright"
+          ]
+        },
+        {
+          name: "Case Clicker на кейсах CS2",
+          desc: "Браузерный ремейк мобильной игры на настоящих кейсах CS2: реальные шансы выпадения, все коллекции и цены Steam Market со сверкой по CSFloat, Skinport и Buff163. Контракты, апгрейд, батлы, заказы коллекционеров. Цены обновляет GitHub Action каждую неделю.",
+          tags: [
+            "JavaScript",
+            "Python",
+            "GitHub Actions"
+          ]
+        },
+        {
+          name: "AI-workspace для iPad",
+          desc: "Нативное iPad-приложение: локальная LLM прямо на устройстве (Qwen через MLX, со зрением по фото), SSH-терминал с ключом в Keychain, мониторинг лимитов AI-агентов и сервисов на VPS с перезапуском, заметки Obsidian с графом связей.",
+          tags: [
+            "Swift",
+            "SwiftUI",
+            "MLX",
+            "SwiftNIO SSH"
           ]
         },
         {
@@ -336,7 +355,7 @@ const dict = {
       ],
       scroll: 'scroll down',
     },
-    marquee: ['Python', 'FastAPI', 'React', 'Flutter', 'PostgreSQL', 'asyncio', 'OpenAI API', 'Claude API', 'DeepSeek', 'Whisper', 'LangChain', 'Playwright', 'Docker', 'Linux VPS', 'systemd', 'Telegram API', 'SQLite', 'ffmpeg', 'TypeScript', 'Next.js', 'Three.js', 'Celery'],
+    marquee: ['Python', 'FastAPI', 'React', 'Flutter', 'PostgreSQL', 'asyncio', 'OpenAI API', 'Claude API', 'DeepSeek', 'Whisper', 'LangChain', 'Playwright', 'Docker', 'Linux VPS', 'systemd', 'Telegram API', 'SQLite', 'ffmpeg', 'TypeScript', 'Next.js', 'Three.js', 'Celery', 'Swift', 'SwiftUI', 'MLX'],
     about: {
       index: '01',
       title: 'About',
@@ -346,8 +365,8 @@ const dict = {
         'I’m looking for an internship or a role where both sides are useful — the economics degree and the ability to write code: finance, analytics, automation.',
       ],
       groups: [
-        { name: 'Engineering', items: ['Python (asyncio, aiogram, Telethon)', 'FastAPI · PostgreSQL · SQLite', 'TypeScript · React · Next.js', 'Flutter · Dart', 'Docker · Linux · systemd'] },
-        { name: 'AI & integrations', items: ['OpenAI GPT · Whisper', 'Claude API', 'DeepSeek API', 'LangChain', 'Groq'] },
+        { name: 'Engineering', items: ['Python (asyncio, aiogram, Telethon)', 'FastAPI · PostgreSQL · SQLite', 'TypeScript · React · Next.js', 'Flutter · Dart', 'Swift · SwiftUI', 'Docker · Linux · systemd'] },
+        { name: 'AI & integrations', items: ['OpenAI GPT · Whisper', 'Claude API', 'DeepSeek API', 'LangChain', 'On-device LLMs (MLX)'] },
         { name: 'Domain', items: ['Risk & insurance', 'China—Russia foreign trade & logistics', 'Retail banking products', 'Content & community growth'] },
         { name: 'Languages', items: ['Russian — native', 'English — C1', 'Arabic — A1'] },
       ],
@@ -391,7 +410,7 @@ const dict = {
         {
           name: "CRM & document workflow for a publisher",
           tagline: "Deals, documents and reporting in one workspace with an AI assistant",
-          desc: "One workspace for a publishing company: deals by stage, clients and contacts, issues and price list, invoices, acts, contracts and proposals with auto-numbering. An AI assistant answers from the database on the web and in Telegram, drafts documents from a prompt, parses PDF client cards and contract photos, and transcribes voice notes (local Whisper). A companion bot assembles service reports on the company letterhead and checks each package for errors.",
+          desc: "One workspace for a publishing company: deals by stage, clients and contacts, issues and price list, invoices, acts, contracts and proposals with auto-numbering. An AI assistant answers from the database on the web and in Telegram, drafts documents from a prompt, parses PDF client cards and contract photos, transcribes voice notes (local Whisper) and answers by voice. An Inbox takes any file and the AI proposes the client, deal, task or note it belongs to. The knowledge base is filled from employees’ Obsidian vaults, with personal notes filtered out by the AI. A companion bot assembles service reports on the company letterhead and checks each package for errors.",
           impact: "The team’s daily tool: sales, paperwork and client reports live in one place, with AI taking over the routine.",
           tags: [
             "Python",
@@ -541,13 +560,32 @@ const dict = {
           ]
         },
         {
-          name: "Football career simulator",
-          desc: "A browser game: a player’s career from academy to finals, 490+ clubs, transfers and awards. Multiplayer rooms with deterministic world sync between players.",
+          name: "“Legenda” sports career series",
+          desc: "Browser games about an athlete’s career at legendapolya.com: football (56 leagues with real competition rules), hockey and basketball (NBA with the draft, EuroLeague, NCAA) on a shared core — saves, events and personality, live match broadcasts, a coaching career, GOAT records. Multiplayer rooms with deterministic world sync, automated balance tests and a UI bot.",
           tags: [
             "JavaScript",
             "Python",
             "PWA",
-            "GitHub Pages"
+            "Playwright"
+          ]
+        },
+        {
+          name: "Case Clicker with CS2 cases",
+          desc: "A browser remake of the mobile game built on real CS2 cases: real drop odds, every collection and Steam Market prices cross-checked against CSFloat, Skinport and Buff163. Trade-ups, upgrades, case battles, collector orders. A GitHub Action refreshes prices weekly.",
+          tags: [
+            "JavaScript",
+            "Python",
+            "GitHub Actions"
+          ]
+        },
+        {
+          name: "AI workspace for iPad",
+          desc: "A native iPad app: a local LLM running on-device (Qwen via MLX, with vision for photos), an SSH terminal with the key in Keychain, monitoring of AI agent limits and VPS services with restarts, Obsidian notes with a link graph.",
+          tags: [
+            "Swift",
+            "SwiftUI",
+            "MLX",
+            "SwiftNIO SSH"
           ]
         },
         {
